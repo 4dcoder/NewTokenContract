@@ -1,0 +1,388 @@
+{
+  "contractName": "LimitBalance",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "limit",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_limit",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806100dd833981016040528080519060200190919050508060008190555050609c806100416000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a4d66daf146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600054815600a165627a7a723058205397d55b1a29fd5c04979ad46ef536c2e629778df67b54aaa4563201ddcb424f0029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a4d66daf146044575b600080fd5b3415604e57600080fd5b6054606a565b6040518082815260200191505060405180910390f35b600054815600a165627a7a723058205397d55b1a29fd5c04979ad46ef536c2e629778df67b54aaa4563201ddcb424f0029",
+  "sourceMap": "345:401:5:-;;;521:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;580:6;572:5;:14;;;;521:70;345:401;;;;;;",
+  "deployedSourceMap": "345:401:5:-;;;;;;;;;;;;;;;;;;;;;;;;372:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\n\n/**\n * @title LimitBalance\n * @dev Simple contract to limit the balance of child contract.\n * @dev Note this doesn't prevent other contracts to send funds by using selfdestruct(address);\n * @dev See: https://github.com/ConsenSys/smart-contract-best-practices#remember-that-ether-can-be-forcibly-sent-to-an-account\n */\ncontract LimitBalance {\n\n  uint256 public limit;\n\n  /**\n   * @dev Constructor that sets the passed value as a limit.\n   * @param _limit uint256 to represent the limit.\n   */\n  function LimitBalance(uint256 _limit) public {\n    limit = _limit;\n  }\n\n  /**\n   * @dev Checks if limit was reached. Case true, it throws.\n   */\n  modifier limitedPayable() {\n    require(this.balance <= limit);\n    _;\n\n  }\n\n}\n",
+  "sourcePath": "C:\\SmartContract\\contracts\\LimitBalance.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/SmartContract/contracts/LimitBalance.sol",
+      "exportedSymbols": {
+        "LimitBalance": [
+          1442
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 1418,
+        "name": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title LimitBalance\n@dev Simple contract to limit the balance of child contract.\n@dev Note this doesn't prevent other contracts to send funds by using selfdestruct(address);\n@dev See: https://github.com/ConsenSys/smart-contract-best-practices#remember-that-ether-can-be-forcibly-sent-to-an-account",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1442
+          ],
+          "name": "LimitBalance",
+          "scope": 1443
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "limit",
+              "scope": 1442,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 1419,
+                "name": "ElementaryTypeName",
+                "src": "372:7:5"
+              }
+            ],
+            "id": 1420,
+            "name": "VariableDeclaration",
+            "src": "372:20:5"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "LimitBalance",
+              "payable": false,
+              "scope": 1442,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_limit",
+                      "scope": 1430,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1421,
+                        "name": "ElementaryTypeName",
+                        "src": "543:7:5"
+                      }
+                    ],
+                    "id": 1422,
+                    "name": "VariableDeclaration",
+                    "src": "543:14:5"
+                  }
+                ],
+                "id": 1423,
+                "name": "ParameterList",
+                "src": "542:16:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1424,
+                "name": "ParameterList",
+                "src": "566:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1420,
+                              "type": "uint256",
+                              "value": "limit"
+                            },
+                            "id": 1425,
+                            "name": "Identifier",
+                            "src": "572:5:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1422,
+                              "type": "uint256",
+                              "value": "_limit"
+                            },
+                            "id": 1426,
+                            "name": "Identifier",
+                            "src": "580:6:5"
+                          }
+                        ],
+                        "id": 1427,
+                        "name": "Assignment",
+                        "src": "572:14:5"
+                      }
+                    ],
+                    "id": 1428,
+                    "name": "ExpressionStatement",
+                    "src": "572:14:5"
+                  }
+                ],
+                "id": 1429,
+                "name": "Block",
+                "src": "566:25:5"
+              }
+            ],
+            "id": 1430,
+            "name": "FunctionDefinition",
+            "src": "521:70:5"
+          },
+          {
+            "attributes": {
+              "name": "limitedPayable",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1431,
+                "name": "ParameterList",
+                "src": "691:2:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1911,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 1432,
+                            "name": "Identifier",
+                            "src": "700:7:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "<=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "balance",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1935,
+                                      "type": "contract LimitBalance",
+                                      "value": "this"
+                                    },
+                                    "id": 1433,
+                                    "name": "Identifier",
+                                    "src": "708:4:5"
+                                  }
+                                ],
+                                "id": 1434,
+                                "name": "MemberAccess",
+                                "src": "708:12:5"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1420,
+                                  "type": "uint256",
+                                  "value": "limit"
+                                },
+                                "id": 1435,
+                                "name": "Identifier",
+                                "src": "724:5:5"
+                              }
+                            ],
+                            "id": 1436,
+                            "name": "BinaryOperation",
+                            "src": "708:21:5"
+                          }
+                        ],
+                        "id": 1437,
+                        "name": "FunctionCall",
+                        "src": "700:30:5"
+                      }
+                    ],
+                    "id": 1438,
+                    "name": "ExpressionStatement",
+                    "src": "700:30:5"
+                  },
+                  {
+                    "id": 1439,
+                    "name": "PlaceholderStatement",
+                    "src": "736:1:5"
+                  }
+                ],
+                "id": 1440,
+                "name": "Block",
+                "src": "694:49:5"
+              }
+            ],
+            "id": 1441,
+            "name": "ModifierDefinition",
+            "src": "668:75:5"
+          }
+        ],
+        "id": 1442,
+        "name": "ContractDefinition",
+        "src": "345:401:5"
+      }
+    ],
+    "id": 1443,
+    "name": "SourceUnit",
+    "src": "0:747:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-15T17:23:38.391Z"
+}

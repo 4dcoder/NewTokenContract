@@ -1,0 +1,357 @@
+{
+  "contractName": "Importer6",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ico",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_immlaIco",
+          "type": "address"
+        }
+      ],
+      "name": "importTokens",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506104d7806100536000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4522011461005c5780638da5cb5b146100b1578063e3ba339814610106575b600080fd5b341561006757600080fd5b61006f61013f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100bc57600080fd5b6100c4610165565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561011157600080fd5b61013d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018a565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156101e257fe5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503073ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663681d52de6000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156102c857600080fd5b6102c65a03f115156102d957600080fd5b5050506040518051905073ffffffffffffffffffffffffffffffffffffffff1614151561030257fe5b61030a61030d565b50565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e3ba339873d29ba5f94fb91eefc5e3aaf69f181febed73930e6040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15156103c757600080fd5b6102c65a03f115156103d857600080fd5b505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e3ba339873d8d80210106e2a431c9c43ac133ec22a008a2f076040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b151561049557600080fd5b6102c65a03f115156104a657600080fd5b5050505600a165627a7a723058207513fa80c593b312c5d0dc4eb4963f9e0f2eea7889e8a49c51c027c3310406420029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4522011461005c5780638da5cb5b146100b1578063e3ba339814610106575b600080fd5b341561006757600080fd5b61006f61013f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100bc57600080fd5b6100c4610165565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561011157600080fd5b61013d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018a565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156101e257fe5b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055503073ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663681d52de6000604051602001526040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15156102c857600080fd5b6102c65a03f115156102d957600080fd5b5050506040518051905073ffffffffffffffffffffffffffffffffffffffff1614151561030257fe5b61030a61030d565b50565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e3ba339873d29ba5f94fb91eefc5e3aaf69f181febed73930e6040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15156103c757600080fd5b6102c65a03f115156103d857600080fd5b505050600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e3ba339873d8d80210106e2a431c9c43ac133ec22a008a2f076040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b151561049557600080fd5b6102c65a03f115156104a657600080fd5b5050505600a165627a7a723058207513fa80c593b312c5d0dc4eb4963f9e0f2eea7889e8a49c51c027c3310406420029",
+  "sourceMap": "60:222:4:-;;;269:10:0;261:5;;:18;;;;;;;;;;;;;;;;;;60:222:4;;;;;;",
+  "deployedSourceMap": "60:222:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;160:19:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;134:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;475:202;;;;;;;;;;;;;;;;;;;;;;;;;;;;160:19;;;;;;;;;;;;;:::o;134:20::-;;;;;;;;;;;;;:::o;475:202::-;542:10;533:19;;:5;;;;;;;;;;;:19;;;526:27;;;;;;578:9;563:3;;:25;;;;;;;;;;;;;;;;;;636:4;605:36;;:3;;;;;;;;;;;:17;;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:36;;;598:44;;;;;;661:9;:7;:9::i;:::-;475:202;:::o;105:175:4:-;143:3;;;;;;;;;;;:16;;;160:42;143:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;213:3;;;;;;;;;;;:16;;;230:42;213:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:175::o",
+  "source": "pragma solidity ^0.4.15;\n\nimport \"./AbstractImporter.sol\";\n\ncontract Importer6 is AbstractImporter {\n    function _import() internal {\n        ico.importTokens(0xd29ba5f94fb91eefc5e3aaf69f181febed73930e);\n        ico.importTokens(0xd8d80210106e2a431c9c43ac133ec22a008a2f07);\n    }\n}",
+  "sourcePath": "C:\\SmartContract\\contracts\\Importer6.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/SmartContract/contracts/Importer6.sol",
+      "exportedSymbols": {
+        "Importer6": [
+          1294
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1274,
+        "name": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 52,
+          "absolutePath": "/C/SmartContract/contracts/AbstractImporter.sol",
+          "file": "./AbstractImporter.sol",
+          "scope": 1295,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1275,
+        "name": "ImportDirective",
+        "src": "26:32:4"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            51
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1294,
+            51
+          ],
+          "name": "Importer6",
+          "scope": 1295
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "AbstractImporter",
+                  "referencedDeclaration": 51,
+                  "type": "contract AbstractImporter"
+                },
+                "id": 1276,
+                "name": "UserDefinedTypeName",
+                "src": "82:16:4"
+              }
+            ],
+            "id": 1277,
+            "name": "InheritanceSpecifier",
+            "src": "82:16:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "_import",
+              "payable": false,
+              "scope": 1294,
+              "stateMutability": "nonpayable",
+              "superFunction": 50,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1278,
+                "name": "ParameterList",
+                "src": "121:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1279,
+                "name": "ParameterList",
+                "src": "133:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_1202359135742236864485172373971022459135375676174_by_1",
+                                  "typeString": "int_const 1202359135742236864485172373971022459135375676174"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "importTokens",
+                              "referencedDeclaration": 665,
+                              "type": "function (address) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 6,
+                                  "type": "contract ImmlaIco",
+                                  "value": "ico"
+                                },
+                                "id": 1280,
+                                "name": "Identifier",
+                                "src": "143:3:4"
+                              }
+                            ],
+                            "id": 1282,
+                            "name": "MemberAccess",
+                            "src": "143:16:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "307864323962613566393466623931656566633565336161663639663138316665626564373339333065",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1202359135742236864485172373971022459135375676174",
+                              "value": "0xd29ba5f94fb91eefc5e3aaf69f181febed73930e"
+                            },
+                            "id": 1283,
+                            "name": "Literal",
+                            "src": "160:42:4"
+                          }
+                        ],
+                        "id": 1284,
+                        "name": "FunctionCall",
+                        "src": "143:60:4"
+                      }
+                    ],
+                    "id": 1285,
+                    "name": "ExpressionStatement",
+                    "src": "143:60:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_1237959147151761343853781720520154896247049301767_by_1",
+                                  "typeString": "int_const 1237959147151761343853781720520154896247049301767"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "importTokens",
+                              "referencedDeclaration": 665,
+                              "type": "function (address) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 6,
+                                  "type": "contract ImmlaIco",
+                                  "value": "ico"
+                                },
+                                "id": 1286,
+                                "name": "Identifier",
+                                "src": "213:3:4"
+                              }
+                            ],
+                            "id": 1288,
+                            "name": "MemberAccess",
+                            "src": "213:16:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "307864386438303231303130366532613433316339633433616331333365633232613030386132663037",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1237959147151761343853781720520154896247049301767",
+                              "value": "0xd8d80210106e2a431c9c43ac133ec22a008a2f07"
+                            },
+                            "id": 1289,
+                            "name": "Literal",
+                            "src": "230:42:4"
+                          }
+                        ],
+                        "id": 1290,
+                        "name": "FunctionCall",
+                        "src": "213:60:4"
+                      }
+                    ],
+                    "id": 1291,
+                    "name": "ExpressionStatement",
+                    "src": "213:60:4"
+                  }
+                ],
+                "id": 1292,
+                "name": "Block",
+                "src": "133:147:4"
+              }
+            ],
+            "id": 1293,
+            "name": "FunctionDefinition",
+            "src": "105:175:4"
+          }
+        ],
+        "id": 1294,
+        "name": "ContractDefinition",
+        "src": "60:222:4"
+      }
+    ],
+    "id": 1295,
+    "name": "SourceUnit",
+    "src": "0:282:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-15T15:38:00.652Z"
+}
